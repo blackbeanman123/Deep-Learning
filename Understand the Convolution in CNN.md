@@ -1,4 +1,4 @@
-##Understand Convolution in CNN
+## Understand Convolution in CNN
 
 
 #### Intuitively：
@@ -36,8 +36,8 @@ continous: ![](./res/conmath1.gif)
 discrete: ![](./res/conmath2.gif)<br/>
 (The integral could be [0, a] or something else)
 
-More detailed: <br/>
-https://colah.github.io/posts/2014-07-Understanding-Convolutions/
+More details: <br/>
+https://colah.github.io/posts/2014-07-Understanding-Convolutions/ <br/>
 https://www.zhihu.com/question/22298352/answer/637156871
 
 #### Image processing:
@@ -62,8 +62,8 @@ more details about the kernel: [superbasic code](./code/img_kernel/img_kernel.py
 The kernel served as a collector of information. If the pixels are bottles of salt water with different sanity, the kernel would mix them according to the probability distribution(the numbers in the kernel), and create salt water containing specific information.
 
 #### Reference:
-https://timdettmers.com/2015/03/26/convolution-deep-learning/
-https://colah.github.io/posts/2014-07-Understanding-Convolutions/
-https://www.zhihu.com/question/22298352/answer/637156871
-https://mlnotebook.github.io/post/CNN1/
+https://timdettmers.com/2015/03/26/convolution-deep-learning/<br/>
+https://colah.github.io/posts/2014-07-Understanding-Convolutions/<br/>
+https://www.zhihu.com/question/22298352/answer/637156871<br/>
+https://mlnotebook.github.io/post/CNN1/<br/>
 
