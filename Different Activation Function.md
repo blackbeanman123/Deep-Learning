@@ -74,7 +74,7 @@ Much better than sigmoid and tanh in CNN
 
 1. **Biological plausibility**: One-sided, compared to the antisymmetry of tanh, and it has sparse activation (x>0 means activated)
 3. **Better gradient propagation**: Fewer vanishing gradient problems
-4. Efficient computation: df = 1 or 0
+4. Efficient computation: df = 1 or 0, so it can speed up the convergence of stochastic gradient descent algorithms.
 5. Scale-invariant: max(0, ax) = amax(0, x) for a>0
 
 #### cons:

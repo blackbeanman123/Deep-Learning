@@ -62,8 +62,9 @@ more details about the kernel: [superbasic code](./code/img_kernel/img_kernel.py
 The kernel served as a collector of information. If the pixels are bottles of salt water with different sanity, the kernel would **mix them according to the probability distribution**(the numbers in the kernel), and create salt water containing specific information.
 
 #### Neural Network
+![](./res/convSobel.gif)(from:https://mlnotebook.github.io/post/CNN1/ )
 
-1. **mix** information
+1. **mix** information, Combine low-level local features into useful higher-level features
 2. maintain **spacial structure**(more information)
 3. **down-scaling**
 4. CNNs are **regularized versions** of multilayer perceptrons(they take advantage of the hierarchical pattern in data and assemble more complex patterns using smaller and simpler patterns. Therefore, on the scale of connectedness and complexity, CNNs are on the lower extreme.So they are not very prone to overfitting)
