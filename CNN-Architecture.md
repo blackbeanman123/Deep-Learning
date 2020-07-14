@@ -72,7 +72,7 @@ overfitting”, JMLR 2014)
 6. The dropout probability have to be much lower for input nodes, or we would lose a lot of information directly.
 7. the layer is usually a FC layer with each node's drop out probability p, and thus the expected value E wouldn't change.
 8. The technique seems to reduce node interactions, leading them to learn more robust features.
-9. The dropout process is analogy to average different networks
+9. The dropout process is analogy to average different networks (add noisy point)
 
 
 detailed information: http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf
