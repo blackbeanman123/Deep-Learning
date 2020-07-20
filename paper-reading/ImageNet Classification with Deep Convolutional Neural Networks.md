@@ -28,6 +28,7 @@ CNN for imagenet
 1. rescaled the image such that the shorter side was of length 256
 2. cropped out the central 256×256 patch from the resulting image
 3. subtracting the mean activity over the training set from each pixel
+4. random crop 224x224 imgs for data augmentation
 
 ### special features:
 
@@ -119,4 +120,4 @@ For comparision: [Different-Activation-Function](../Different-Activation-Functio
 
 (data augmentation)[25] P.Y. Simard, D. Steinkraus, and J.C. Platt. Best practices for convolutional neural networks applied to visual document analysis. In Proceedings ofthe Seventh International Conference on Document Analysis and Recognition, volume 2, pages 958–962, 2003.
 
-##写作练习
+## W P

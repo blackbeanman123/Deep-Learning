@@ -32,7 +32,7 @@ class LeNet(nn.Module):
         x = self.pool(x)    #C2 layer, pooling + some activation function(tanh in lenet)
         x = torch.tanh(self.conv2(x))   #C3 , my implementation is not the same as lenet; It's a simple conv layer
         x = self.pool(x)    #C4 pooling layer
-        x = torch.tanh(self.conv3(x))   #C5 conv 
+        x = torch.tanh(self.conv3(x))   #C5 conv, (16x5x5->120x1x1)(use conv as dense function)
         x = x.reshape(x.shape[0], -1)  #unroll  
         x = torch.tanh(self.fc1(x))     #C6 FC layer
         x = torch.softmax(self.fc2(x), dim = 1)  #C7 FC layer& output layer, not exactly the same activition function used in lenet
