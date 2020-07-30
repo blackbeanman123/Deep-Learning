@@ -51,6 +51,8 @@ CNN for imagenet
 
 ## Evaluation
 
+![](../res/640.jpeg)
+
 ![](../res/rescur.png)
 
 
