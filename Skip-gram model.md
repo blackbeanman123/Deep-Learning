@@ -1,9 +1,13 @@
 # Skip-gram model
 
+[ori paper1](https://arxiv.org/pdf/1301.3781.pdf%C3%AC%E2%80%94%20%C3%AC%E2%80%9E%C5%93)
+[ori paper2](https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)
+
 ## 1.What is this model used for?
 
 1. ANS:The model is used for generating "high quanlity" word vectors.    
 2. High quanlity means that similar words is close in the vector space, basic linear operation would make sense(vec(king) - vec(man) + vec(woman) = vec(queen)), and etc.
+
 
 ## 2.How dose the model achieve the "high quanlity"?
 
