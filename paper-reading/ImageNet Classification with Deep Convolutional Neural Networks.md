@@ -7,6 +7,7 @@
 3. Use ReLU as default
 4. Data Augmentation & Dropout -> reduce overfitting
 5. conv+relu+pooling
+6. The CNN serves as a feature extractor which can project the images into a space with nice property
 
 
 ## Research Object
@@ -86,6 +87,8 @@ For comparision: [Different-Activation-Function](../Different-Activation-Functio
 2. initialized the weights in each layer from a zero-mean Gaussian distribution with standard de- viation 0.01
 3. divide the learning rate by 10 when the validation error rate stopped improving with the current learning rate
 4. some positive bias terms for ReLU
+5. After the image's 'pixel space' transformed by the CNN layers, it enters a 'high-level-feature space' where the L2 distance could measure the 'image distance' precisely.
+![](../res/alexl2.png)
 
 ### Architecture and code
 
