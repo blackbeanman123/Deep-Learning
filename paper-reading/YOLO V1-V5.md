@@ -76,7 +76,7 @@ We remove the fully connected layers from YOLO anduse anchor boxes to predict bo
 
 #### Dimension Clusters     
 
-Hand picked anchors can be picked by **k-means clustering**(), which has better IoU:
+Hand picked anchors can be picked by **k-means clustering**(), which has better IoU:            
 <img src="../res/yolo6.png" width = "400" height = "340" align=center />      
 
 what we really want are priors that lead to good IOU scores, which is independent of the size of the box: **d(box, centroid) = 1 − IOU(box, centroid)**       
