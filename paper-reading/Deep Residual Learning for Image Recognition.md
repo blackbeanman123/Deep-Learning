@@ -13,7 +13,7 @@
 
 CNN for imagenet
 
-## Problem Statement
+## Main Problems
 
 1. When the network is very deep -> vanishing/exploding gradients (Usually, we use normalized initialization [23, 9, 37, 13] and Batch normalization[16] to fix it)
 2. When the network is very deep and able to converge -> degradation(accuracy will rise untill saturated and then drop)(not caused by overfitting)
@@ -37,8 +37,8 @@ CNN for imagenet
 6. When there are more layers, an individual layer of ResNets tends to modify the response signal less.
 7. residual functions might be generally closer to zero than the non-residual functions（easy to learn）
 
-
-![](../res/resres.png)(response comparision; The respon is analogious to the eletronic pulse)
+<img src="../res/resres.png" width = "400" height = "260" align=center /> </br>
+(response comparision; The respon is analogious to the eletronic pulse)
 
 ### details about residual block
 
@@ -51,12 +51,12 @@ CNN for imagenet
 
 ## Evaluation
 
-![](../res/640.jpeg)
+<img src="../res/640.jpeg" width = "600" height = "300" align=center /> 
 
-![](../res/rescur.png)
+<img src="../res/rescur.png" width = "700" height = "230" align=center /> 
 
-
-![](../res/res1202.png)(res-1202 -> perhaps overfitting )
+<img src="../res/res1202.png" width = "400" height = "400" align=center /> ].    
+(res-1202 -> perhaps overfitting )
 
 
 ![](../res/rescmp.png)

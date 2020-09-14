@@ -22,7 +22,7 @@
 #### filter:
 
 1. The size of the filter is crucial. We need to find the **right level of granularity** so as to create abstractions at the proper scale. usually, 3x3, 5x5, 7x7...
-2. Preserving more information about the input would require keeping the total number of activations (number of feature maps times number of pixel positions) **non-decreasing** from one layer to the next(or the receptive field would not change, the same as https://mlnotebook.github.io/post/CNN1/ :"A Note on the Receptive Field" ).
+2. Preserving more information about the input would require keeping the total number of activations (number of feature maps times number of pixel positions) **non-decreasing** from one layer to the next(or the receptive field would not change, https://mlnotebook.github.io/post/CNN1/ :"A Note on the Receptive Field" ).
 
 
 
@@ -75,9 +75,6 @@ overfitting”, JMLR 2014)
 9. The dropout process is analogy to average different networks (add noisy point)
 
 
-detailed information: http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf
-
-
 
 
 
@@ -86,3 +83,4 @@ detailed information: http://www.jmlr.org/papers/volume15/srivastava14a/srivasta
 https://mlnotebook.github.io/post/CNN1/ <br/>
 https://en.wikipedia.org/wiki/Convolutional_neural_network<br/>
 https://medium.com/@amarbudhiraja/https-medium-com-amarbudhiraja-learning-less-to-learn-better-dropout-in-deep-machine-learning-74334da4bfc5
+http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf

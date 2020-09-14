@@ -25,39 +25,39 @@ Many natural processes, such as those of complex system learning curves, exhibit
 
 #### pros:
 
-1. Smooth gradient
-2. D = (-inf, +inf), R = (0, 1)
-3. Clear prediction: For x<-2, y->0; For x>2, y->1
-4. easy to cal the gradient
-5. **statistical properties**
+>1. Smooth gradient
+>2. D = (-inf, +inf), R = (0, 1)
+>3. Clear prediction: For x<-2, y->0; For x>2, y->1
+>4. easy to cal the gradient
+>5. **statistical properties**
 
 #### cons:
 
-1. Vanishing gradient: For x->+-inf, gradient->0, making the gradient descent inefficient (or barely 0 gradient)
-2. Not zero-centered: So the gradient descent would perform in a inefficient zigzag way
-3. Computationally expensive：exp() is expensive
+>1. Vanishing gradient: For x->+-inf, gradient->0, making the gradient descent inefficient (or barely 0 gradient)
+>2. Not zero-centered: So the gradient descent would perform in a inefficient zigzag way
+>3. Computationally expensive：exp() is expensive
 <br/><br/>
 
 Usage: binary classfication in the output layer, ordianary layer (rarely used now) 
 
 ### 2.tanh Function
-tanh is usually slightly better than sigmoid function
+tanh is usually slightly better than sigmoid function          
 ![](./res/tanh.png)<br/>
 ![](./res/tanh1.gif) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](./res/tanh2.png)
 
 #### pros:
 
-1. Smooth gradient
-2. D = (-inf, +inf), R = (-1, 1)
-3. clear prediction: For x<-2, y->0; For x>2, y->1
-4. easy to cal the gradient
-5. more efficient than sigmoid: more steep derivative, less iteration
-6. **zero centered**
+>1. Smooth gradient
+>2. D = (-inf, +inf), R = (-1, 1)
+>3. clear prediction: For x<-2, y->0; For x>2, y->1
+>4. easy to cal the gradient
+>5. more efficient than sigmoid: more steep derivative, less iteration
+>6. **zero centered**
 
 #### cons: (same)
 
-1. Vanishing gradient: For x->+-inf, gradient->0, making the gradient descent inefficient (or barely 0 gradient)
-2. Computationally expensive：exp() is expensive
+>1. Vanishing gradient: For x->+-inf, gradient->0, making the gradient descent inefficient (or barely 0 gradient)
+>2. Computationally expensive：exp() is expensive
 <br/><br/>
 
 Usage: almost the same as the Sigmoid function
@@ -72,15 +72,16 @@ Much better than sigmoid and tanh in CNN
 
 #### pros:(form wiki)
 
-1. **Biological plausibility**: One-sided, compared to the antisymmetry of tanh, and it has sparse activation (x>0 means activated)
-3. **Better gradient propagation**: Fewer vanishing gradient problems
-4. Efficient computation: df = 1 or 0, so it can speed up the convergence of stochastic gradient descent algorithms.
-5. Scale-invariant: max(0, ax) = amax(0, x) for a>0
+>1. **Biological plausibility**: One-sided, compared to the antisymmetry of tanh, and it has sparse activation (x>0 means activated)
+>3. **Better gradient propagation**: Fewer vanishing gradient problems
+>4. Efficient computation: df = 1 or 0, so it can speed up the convergence of stochastic gradient descent algorithms.
+>5. Scale-invariant: max(0, ax) = amax(0, x) for a>0
 
 #### cons:
-1. Not zero-centered (Zigzag)
-2. Unbounded (Krizhevsky et al.2012 used Local Response Normalization,LRN to fix it, this method is highly controversial)
-3. Dying ReLU Problem: Usually, if the learning rate was set too high, the z would stuck in the z<0 zone(gradient = 0) (use leaky ReLU or set the bias term=C>0 would help)
+
+>1. Not zero-centered (Zigzag)
+>2. Unbounded (Krizhevsky et al.2012 used Local Response Normalization,LRN to fix it, this method is highly controversial)
+>3. Dying ReLU Problem: Usually, if the learning rate was set too high, the z would stuck in the z<0 zone(gradient = 0) (use leaky ReLU or set the bias term=C>0 would help)
 
 #### Variants:
 
@@ -108,14 +109,14 @@ In **Thermodynamics**, it is the Boltzmann distribution, The Boltzmann distribut
 
 #### pros:
 
-1. Can be interpreted as probabilities
-2. Can be used for negative numbers, and D = (-inf, +inf), R = (0, 1)
-3. Robust: small changes in input would rarely cause large changes in the output
+>1. Can be interpreted as probabilities
+>2. Can be used for negative numbers, and D = (-inf, +inf), R = (0, 1)
+>3. Robust: small changes in input would rarely cause large changes in the output
 
 
 #### cons:
 
-1. inefficient computation
+>1. inefficient computation
 
 #### Usage:
 

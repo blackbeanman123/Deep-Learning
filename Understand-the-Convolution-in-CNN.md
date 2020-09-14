@@ -44,7 +44,7 @@ https://www.zhihu.com/question/22298352/answer/637156871
 
 1.We can think of images as two-dimensional functions. Many important image transformations are convolutions where you **convolve the image function with a very small, local function called a “kernel**.”
 
-![](./res/convolution-theorem1.png)from timdettmers.com)<br/>
+![](./res/convolution-theorem1.png)<br/>
 Mathmatically, we should turn the kernel upside-down(rotated by 180 degrees) before convolve, but in  CNN, it doesn't hurt.
 
 <br/><br/><br/>

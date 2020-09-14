@@ -16,27 +16,28 @@
 ## 3.Details about the basic skip-gram model
 
 1. There is a word window moving along the passage to capture different sets of center word + context words.
-2. Words around the center word(context word) were used to training a model(Using multivariate softmax regression) by maximizing the occurence of context words.
-![](./res/training_data.png)  
+2. Words around the center word(context word) were used to training a model(Using multivariate softmax regression) by maximizing the occurence of context words.   
+<img src="./res/training_data.png" width = "600" height = "340" align=center />       
 **The training samples serve as "index" of O and C in the loss function J.**    
 (from:http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/)
 ![](./res/sk2.png)
 3. maximizing formula:       
 (from:https://medium.com/analytics-vidhya/maths-behind-word2vec-explained-38d74f32726b)    
-The maximum likelihood estimation(MLE) is used on all single words to learn a model, which can estimate the occurence probabilities of all words given the center word.    
+The maximum likelihood estimation(MLE) is used on all single words to learn a model, which can estimate the occurence probabilities of all words given the center word.        
 ![](./res/sk1.png)   
 But the loss function above is hard to optimize, so we can minimize an equivalent one([Negative Log Likelihood](https://glassboxmedicine.com/2019/12/07/connections-log-likelihood-cross-entropy-kl-divergence-logistic-regression-and-neural-networks/)) instead:     
 ![](./res/sk3.png)       
-And the softmax function was used to transform a vector into a pobability distribution.
-We will use Uw when w is the context word and Vw when w is the center word
-![](./res/sk4.png)     
+And the softmax function was used to transform a vector into a pobability distribution.         
+We will use Uw when w is the context word and Vw when w is the center word             
+<img src="./res/sk4.png" width = "150" height = "200" align=center />
+
 (Theta == Weights in the hidden layer) (2 vectors U and V -> easier to optimization than a single vector)    
 4. **The conditional probability![](./res/sk5.png), where the O respects to the center word and the Cs respect to the context words; The numerator corresponds to the context words in the word window and the denominator corresponds to the other words in whole vocab(or Negative samples, they are of lower probability)**.
 
 4. The Architecture    
 (from:http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/) 
 ![](./res/skip_gram_net_arch.png)        
-What we want is the Weights(U and V; size:(2*words x vec_len)) in the hidden layer, which is the "high-quanlity" word vectors(rows of Vw).   
+What we want is the Weights in the hidden layer**(U and V are used to construct the word vectors(usually word_vec = U + V)**.      
 **For Batchsize = t, the input is a (words x t) matrix.**    
 
 6. The first layer is just a linear layer(without activation function);And all the weights are randomly initialized.
@@ -79,11 +80,11 @@ significantly decreasing training time & improving performance
 
 ## 6. results
 
-![](./res/sk11.png)
-![](./res/sk9.png).     
-![](./res/sk10.png)
+<img src="./res/sk11.png" width = "600" height = "350" align=center />     
+<img src="./res/sk9.png" width = "600" height = "200" align=center />
+<img src="./res/sk10.png" width = "600" height = "400" align=center />    
  
-### 7.references
+## 7.references
 
 representations of word vector:     
 [10] G.E. Hinton, J.L. McClelland, D.E. Rumelhart. Distributed representations. In: Parallel dis- tributed processing: Explorations in the microstructure of cognition. Volume 1: Foundations, MIT Press, 1986.     

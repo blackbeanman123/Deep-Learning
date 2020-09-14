@@ -5,8 +5,7 @@
 1. Use Multiple 3x3 conv. layers instead of a single layer with large kernel.
 2. The depth is critical in visual representations.(neither too shallow nor too deep, just about to saturate)
 3. Combine multiple convnet models(model fusion) to obtain better performance.
-
-![](../res/multiple-model.png)
+<img src="../res/multiple-model.png" width = "600" height = "200" align=center />
 4. Use muti-scale training and muti-scale Testing
 5. Use pre-training
 
@@ -15,7 +14,7 @@
 
 CNN architecture for imagenet
 
-## Problem Statement
+## Main Problems
 
 Improve the original architecture of Krizhevsky et al
 
@@ -34,7 +33,7 @@ Improve the original architecture of Krizhevsky et al
 
 ### Achitecture
 
-![](../res/VGG.png)
+<img src="../res/VGG.png" width = "500" height = "600" align=center />
 
 ![](../res/VGGa.jpg)(D:VGG16)
 
@@ -61,12 +60,9 @@ Improve the original architecture of Krizhevsky et al
 1. Training-time: Rescale the image randomly([256,512]) and then randomly crop 224x224 sub-img from it.
 2. Test-time: Make predictions for the 224x224 randomly cropped sub-imgs of a single img, and then average them to get the final-prediction.
 3. Predictions made for each , then the predictions were averaged to give a final prediction.
-
-![](../res/Mutitt.png)
+<img src="../res/Mutitt.png" width = "340" height = "400" align=center />
 4. Dense&muti-crop has better performance
-
 ![](../res/cropdense.png)
-
 5. The last 3 FC layers have been changed to 3 conv layers in order to process img with different resolution.(the idea comes from OverFeat)
 
 ### Initialization

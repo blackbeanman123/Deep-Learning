@@ -14,7 +14,7 @@
 
 CNN for imagenet
 
-## Problem Statement
+## Main Problems
 
 1. Need a model with large learning ability for large datasets.
 1. **Very deep neural networks are prone to overfitting.**
@@ -87,10 +87,11 @@ For comparision: [Different-Activation-Function](../Different-Activation-Functio
 2. initialized the weights in each layer from a zero-mean Gaussian distribution with standard de- viation 0.01
 3. divide the learning rate by 10 when the validation error rate stopped improving with the current learning rate
 4. some positive bias terms for ReLU
-5. After the image's 'pixel space' transformed by the CNN layers, it enters a 'high-level-feature space' where the L2 distance could measure the 'image distance' precisely.
-![](../res/alexl2.png)
+5. After the image's 'pixel space' transformed by the CNN layers, it enters a 'high-level-feature space' where the L2 distance could measure the 'image distance' precisely.     
 
-### Architecture and code
+<img src="../res/alexl2.png" width = "700" height = "350" align=center /> 
+
+### Architecture
 
 ![](../res/AlexNet.png)
 
